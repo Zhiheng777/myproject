@@ -29,3 +29,8 @@ git bush 打开命令行
 ##此处工作在分支中备份等完成之后合并到主队中
 	git checkout master
 	git merge master
+	
+##上传至github 要与github建立连接      
+  git remote add origin https://github.com/Zhiheng777/First.git
+##然后
+	git push origin master
