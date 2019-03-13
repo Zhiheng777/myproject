@@ -1,0 +1,31 @@
+##配置文件信息
+git bush 打开命令行
+  在项目文件打开
+  git init初始化
+##在git中自报家门  
+	git config --global user.name "名字"
+	git config --global user.email "邮箱" //邮箱要符合规则
+##将代码放入仓库 分为两步
+	1.放在大门口    2.放入房间
+	git add ./readme.md
+	git commit -m "备注"       //-m  message
+	
+	git commit    会进入vim编辑状态
+	git status   查看目前状态
+	git commit ---all -m "" 一次性放入仓库
+##查看日志（记录）
+	git log
+	git log --oneline  //简洁版
+##回退备份
+	git reset --hard Head~0 //指向目前0数字对应
+	git reset --hard Head~n //回退n个版本
+	git reset --hard 版本号 //精确回退
+	
+	git reflog //每一次切换版本的纪录
+##功能做一半想备份又不想影响主队此处开辟侧链
+	git branch name //创建分支
+	git checkout name  //checkout切换到指定分支
+	git branch   //查看分支
+##此处工作在分支中备份等完成之后合并到主队中
+	git checkout master
+	git merge master
