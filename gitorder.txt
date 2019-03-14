@@ -21,7 +21,7 @@ git bush 打开命令行
 	git reset --hard Head~n //回退n个版本
 	git reset --hard 版本号 //精确回退
 	
-	git reflog //每一次切换版本的纪录
+	git reflog //每一S次切换版本的纪录
 ##功能做一半想备份又不想影响主队此处开辟侧链
 	git branch name //创建分支
 	git checkout name  //checkout切换到指定分支
@@ -34,6 +34,10 @@ git bush 打开命令行
 ##上传至github 要与github建立连接      
   git remote add origin https://github.com/Zhiheng777/First.git
 ##然后
-	git push origin master
-##或者
+	git push origin master   //不用重复拷贝
+##或者直接点通过https需要用户密码验证
 	git push https://github.com/Zhiheng777/First.git master/dev
+##通过ssh公钥私钥
+##下载
+	git  pull https://github.com/Zhiheng777/myproject.git matser/dev
+##git push origin -u master   默认链接master
